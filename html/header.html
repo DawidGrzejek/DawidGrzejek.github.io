@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="Autor" content="Dawid Grzejek">
+		<meta name="robots" content="all" />
+		<meta name="description" content="Zarządzaine Projektami Informatycznymi">
+		<meta name="keywords" content="PHP, HTML, CSS, DSW, ZPI, WROCŁAW">
+      <title>Zarządzanie Projektami Informatycznymi</title>
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/main2.css?ver=1">
+      <link rel="stylesheet" type="text/css" href="../css/fontawesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+   </head>
+   <body>
+      <div id="header" class="header">
+         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+               <a class="navbar-brand" href="index.php?about"><img src="imgs/logo2.png" alt="#" width="150"/></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+                  <div class="collapse navbar-collapse" id="show-menu">
+                  <div class="logo-name" id="show-menu" style="margin-top: 20px;">
+                     <p><b>ZPI | DSW</b></p>
+                  </div>
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.php?about">Home</a>
+                     </li>
+                     <div class="dropdown nav-item">
+                        <button class="dropbtn nav-link" style="color:white">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a class="nav-link" href="portfolio.php">Portftolio</a>
+                          <a class="nav-link" href="blog.php">Blog</a>
+                          <a class="nav-link" href="about_me.php">About Me</a>
+                          <a class="nav-link" href="contact.php">Contact</a>
+                        </div>
+                      </div>
+                     <li class="nav-item">
+                        <a class="nav-link" href="page_list.php">Zbiór stron</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="kody_teams.php">Kody MS Teams</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="usefull_links.php">Przydatne Linki</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <p class="marquee"><span id="dtText"></span></p>
+         <script>
+         DayName = new Array(7)
+         DayName[0] = "niedziela "
+         DayName[1] = "poniedziałek "
+         DayName[2] = "wtorek "
+         DayName[3] = "środa "
+         DayName[4] = "czwartek "
+         DayName[5] = "piątek "
+         DayName[6] = "sobota "
+                  
+         MonthName = new Array(12)
+         MonthName[0] = "stycznia "
+         MonthName[1] = "lutego "
+         MonthName[2] = "marca "
+         MonthName[3] = "kwietnia "
+         MonthName[4] = "maja "
+         MonthName[5] = "czerwca "
+         MonthName[6] = "lipca "
+         MonthName[7] = "sierpnia "
+         MonthName[8] = "września "
+         MonthName[9] = "października "
+         MonthName[10] = "listopada "
+         MonthName[11] = "grudnia "
+
+         function getDateStr(){
+         var Today = new Date()
+         var WeekDay = Today.getDay()
+         var Month = Today.getMonth()
+         var Day = Today.getDate()
+         var Year = Today.getFullYear()
+         var Hour = Today.getHours()
+         var Minutes = Today.getMinutes()
+
+         if(Year <= 99)
+             Year += 1900
+
+         return DayName[WeekDay] + "," + " " + Day + " " + MonthName[Month] + ", " + Year + " Godzina: " + " " + Hour + ":" + Minutes
+         }
+
+         document.getElementById('dtText').innerHTML = "Dzisiejsza data: " + getDateStr();
+         </script>
+      </div>
+      
+      

@@ -1,0 +1,68 @@
+body {
+	background-color: white;
+}
+
+header {
+	background-color: #aeaeae;
+	margin: 0px 5px;
+}
+
+header h1 {
+	color: #880e4f;
+	margin-bottom: 20px;
+}
+
+header p {
+	color: #8e46aa;
+	font-size: 26px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Comic Sans MS;
+	text-shadow: 1px 2px 2px ;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+	margin : 10px 30px;
+}
+
+.main{
+	margin-left: 20%; 
+	margin-right: 20%;
+	background-color: #eee;
+}
+
+.container{
+	text-align: left;
+	margin-left: 5px;
+}
+
+article h3{
+	font-weight: bold;
+}
+
+article p{
+	font-family: serif;
+	font-size: 14px;
+}
+
+#wprowadzenie {
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+.video iframe{
+	width:682px;
+	height:384px;
+}
+
+footer {
+	background-color: #eca0f3;
+	position: relative;
+	width: 100%;
+	top: -20px;
+}

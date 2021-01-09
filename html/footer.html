@@ -1,0 +1,42 @@
+<footer>
+         <div class="container">
+            <div class="footer-div" style="display:inline-block;">
+                     <img src="imgs/witcher.png" alt="#" height="400" style="float:left;"/>
+                     <p style="margin-top: 10%;"><i>Zło to zło, Stregoborze </i>- rzekł poważnie wiedźmin wstając. - <i>Mniejsze, większe, średnie, wszystko jedno, proporcje są umowne a granice zatarte. Nie jestem świątobliwym pustelnikiem, nie samo dobro czyniłem w życiu. Ale jeżeli mam wybierać pomiędzy jednym złem a drugim, to wolę nie wybierać wcale. </i>- Geralt z Rivi</p>
+            </div>
+         </div>
+         <div class="copyright text-center">
+            <p>Copyright 2020  Design by Dawid Grzejek</p>
+         </div>
+      </footer>
+      <script>
+         $(function () {
+             
+             'use strict';
+             
+             var winH = $(window).height();
+             
+             $('header').height(winH);  
+             
+             $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+             
+             $('.navbar ul li a.search').on('click', function (e) {
+                 e.preventDefault();
+             });
+             $('.navbar a.search').on('click', function () {
+                 $('.navbar form').fadeToggle();
+             });
+             
+             $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                 
+                 var getAttr = $(this).attr('href');
+                 
+                 e.preventDefault();
+                 $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+             });
+         })
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   </body>
+</html>

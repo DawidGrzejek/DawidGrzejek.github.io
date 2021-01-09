@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-size: cover;
+    background-color: white;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+ 
+
+  /* About */
+  
+.about_section h3 {
+    font-size: 40px;
+    margin: 5px 0 25px 0;
+    font-weight: 600;
+}
+
+.about_section h4 {
+    color: #4fcaff;
+    font-size: 18px;
+    margin: 0;
+}
+
+  .layout_padding {
+    padding: 90px 0;
+}
+
+.h3, h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #3a3a3a;
+    text-transform: uppercase;
+} 
+
+/* Subscribe */
+.subcribe {
+    padding: 80px 0;
+}
+
+.subcribe h3 {
+    color:black;
+}
+
+.subcribe p {
+    margin: 0;
+    color: black;
+}
+
+.subcribe form {
+    height: 72px;
+    background: yellow;
+    margin-top: 20px;
+}
+
+.subcribe form {
+    height: 72px;
+    background: #fff;
+    margin-top: 20px;
+    padding: 0;
+    font-weight: 300;
+    font-size: 19px;
+    display: flex;
+}
+
+.subcribe form input {
+    margin: 0;
+    padding: 0 30px;
+    width: 80%;
+    border: bold;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.subcribe form textarea {
+    margin: 0;
+    padding: 0 30px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    resize: none;
+}
+
+.subcribe form label{
+    margin: 0;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.subcribe form button {
+    background: #fa3e19;
+    color: #fff;
+    width: 185px;
+    border: none;
+    font-size: 20px;
+}
+
+.subcribe form button:hover,
+.subcribe form button:focus {
+    background: #111;
+    color: #fff;
+}
+
+
+/* Facebook */
+
+.facebook_group{
+    padding: 40px 20;
+    background: #4fcaff;
+}
+
+.facebook_group h3{
+    color:white;
+}
+
+
+@media (max-width: 767px) {
+    .layout_padding {
+        padding: 50px 0;
+    }
+    
+    .about_section h3 {
+        font-size: 30px;
+        margin: 10px 0 25px 0;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    
+    .h3, h3 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #3a3a3a;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .subcribe form {
+        height: auto;
+        background: #fff;
+        margin-top: 20px;
+        padding: 0;
+        font-weight: 300;
+        font-size: 19px;
+        display: block;
+    }
+    
+    .subcribe form input {
+        margin: 0;
+        padding: 20px 30px;
+        width: 80%;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .subcribe form textarea {
+        margin:0;
+        padding: 20px 30px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        resize: none;
+    }
+    
+    .subcribe form button {
+        background: #fa3e19;
+        color: #fff;
+        width: 100%;
+        border: none;
+        font-size: 20px;
+        padding: 12px 0;
+    }
+    
+    .subcribe form button:hover,
+    .subcribe form button:focus {
+        background: #111;
+        color: #fff;
+    }
+
+    .facebook_group{
+        padding: 40px 20;
+        background: #4fcaff;
+    }
+    
+    .facebook_group h3{
+        color:white;
+    }
+    
+}

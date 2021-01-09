@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Autor" content="Bartłomiej Karaczyn">
+		<meta name="robots" content="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Projektowanie stron www - TCP/IP">
+		<meta name="keywords" content="TCP, IP, TCP/IP">
+			<title>Model TCP/IP</title>
+	</head>
+<body>
+
+	<h1>Model TCP/IP</h1>
+
+	<h2>Wprowadzenie</h2>
+
+		<p><strong>Model TCP/IP <em>(ang. Transmission Control Protocol/Internet Protocol)</em></strong> – teoretyczny model warstwowej struktury protokołów komunikacyjnych. Model TCP/IP został stworzony w latach 70. XX wieku w DARPA, aby pomóc w tworzeniu odpornych na atak sieci komputerowych. Potem stał się podstawą struktury Internetu. </p>
+
+		<p>Podstawowym założeniem modelu TCP/IP jest podział całego zagadnienia komunikacji sieciowej na szereg współpracujących ze sobą warstw (ang. layers). Każda z nich może być tworzona przez programistów zupełnie niezależnie, jeżeli narzucimy pewne protokoły według których wymieniają się one informacjami. Założenia modelu TCP/IP są pod względem organizacji warstw zbliżone do modelu OSI. Jednak liczba warstw jest mniejsza i bardziej odzwierciedla prawdziwą strukturę Internetu. Model TCP/IP składa się z czterech warstw. .</p>
+
+		<p>Dla Internetu sformułowano uproszczony Model TCP/IP, który <mark> ma tylko 4 warstwy.</mark></p>
+
+	<hr size="1">
+
+	<h2>Warstwa aplikacji</h2>
+
+		<p>Warstwa procesowa czy warstwa aplikacji (ang. process layer) to najwyższy poziom, w którym pracują użyteczne dla człowieka aplikacje, takie jak np. serwer WWW czy przeglądarka internetowa. Obejmuje ona zestaw gotowych protokołów, które aplikacje wykorzystują do przesyłania różnego typu informacji w sieci. Wykorzystywane protokoły to m.in.: HTTP, Telnet, FTP, TFTP, SNMP, DNS, SMTP, X Window.</p>
+
+	<hr size="1">
+
+	<h2>Warstwa transportowa</h2>
+
+		<p>Warstwa transportowa (ang. host-to-host layer) gwarantuje pewność przesyłania danych oraz kieruje właściwe informacje do odpowiednich aplikacji. Opiera się to na wykorzystaniu portów określonych dla każdego połączenia. W jednym komputerze może istnieć wiele aplikacji wymieniających dane z tym samym komputerem w sieci i nie nastąpi wymieszanie się przesyłanych przez nie danych. To właśnie ta warstwa nawiązuje i zrywa połączenia między komputerami oraz zapewnia pewność transmisji.</p>
+
+	<hr size="1">
+
+	<h2>Warstwa Internetu</h2>
+
+		<p>Warstwa Internetu lub warstwa protokołu internetowego (ang. internet protocol layer) to sedno działania Internetu. W tej warstwie przetwarzane są datagramy posiadające adresy IP. Ustalana jest odpowiednia droga do docelowego komputera w sieci. Niektóre urządzenia sieciowe posiadają tę warstwę jako najwyższą. Są to routery, które zajmują się kierowaniem ruchu w Internecie, bo znają topologię sieci. Proces odnajdywania przez routery właściwej drogi określa się jako trasowanie.</p>
+
+	<hr size="1">
+
+	<h2>Warstwa dostępu do sieci</h2>
+
+		<p>Warstwa dostępu do sieci lub warstwa fizyczna (ang. network access layer) jest najniższą warstwą i to ona zajmuje się przekazywaniem danych przez fizyczne połączenia między urządzeniami sieciowymi. Najczęściej są to karty sieciowe lub modemy. Dodatkowo warstwa ta jest czasami wyposażona w protokoły do dynamicznego określania adresów IP.</p>
+
+	<hr size="1">
+
+	<h3>Implementacja</h3>
+
+		<p>W dzisiejszych czasach praktycznie każdy system operacyjny posiada domyślnie zainstalowane protokoły TCP/IP.
+
+		Istnieje także Lightweight TCP/IP, szerzej znany jako darmowy stos TCP/IP dla systemów wbudowanych, czyli będących integralną częścią obsługiwanego przez nie sprzętu – jest to stos protokołów dla systemów obsługujących zarówno amatorskie, jak i zaawansowane urządzenia, często budowane z wykorzystaniem programowalnych układów FPGA (np. sprzętowe serwery WWW, FTP). Istnieją także proste stosy TCP/IP realizowane całkowicie sprzętowo. </p>
+
+	<hr size="1">
+
+	<h4>Schemat</h4>
+
+	<img src="img/schemat.png" style="width:550px; height:350px">
+
+	<hr size="1">
+
+	<p><strong>Przejdź do strony</strong> <a href="tcp.html">Model TCP/IP</a> | <a href="iso.html">Model ISO/OSI</a></p>
+
+</body>
+</html>
